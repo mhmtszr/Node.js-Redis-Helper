@@ -1,4 +1,4 @@
-# Node.js Redis
+# Node.js Redis Helper
 
 Example usage of Redis on Node.js.
 

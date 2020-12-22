@@ -1,5 +1,5 @@
 {
-  "name": "redistest",
+  "name": "node.js-redis-helper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
