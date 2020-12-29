@@ -53,6 +53,27 @@ client.del("user_name", (error, message) => {
   console.log("Delete user_name: ", message);
 });
 
+// Hash Set
+const userData = {
+  userId: "1",
+  name: "mehmet",
+  surname: "sezer",
+};
+client.hset("users", "1", JSON.stringify(userData), (error, message) => {
+  if (error) {
+    console.error(error);
+  }
+  console.log("HSET userData: ", message);
+});
+
+// Hash Get
+client.hget("users", "1", (error, message) => {
+  if (error) {
+    console.error(error);
+  }
+  console.log("HGET User 1: ", message);
+});
+
 // Pub-Sub example
 client.on("message", (channel, message) => {
   console.log("Coming message channel is: ", channel);
